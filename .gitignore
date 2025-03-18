@@ -1,0 +1,25 @@
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.py.class
+*.py.orig
+*.py~
+*.egg-info/
+*.egg
+*.manifest
+*.spec
+
+# Ignore IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-workspace
+*.sublime-project
+
+# Ignore virtual environment files
+venv/
+env/
+*.env
