@@ -98,5 +98,6 @@ class SoftmaxLossLayer(object):
         return loss
     def backward(self):   # 反向传播的计算
         # TODO：softmax 损失层的反向传播，计算本层损失
-        bottom_diff= (self.label_onehot - self.prob) / self.batch_size
+        # bottom_diff= (self.label_onehot - self.prob) / self.batch_size；抄公式的时候抄反了，导致loss一直是nan
+        bottom_diff= (self.prob - self.label_onehot) / self.batch_size
         return bottom_diff
